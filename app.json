@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Journal Tracking",
+    "slug": "journal-tracking",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to camera to take photos for journal entries.",
+        "NSMicrophoneUsageDescription": "This app needs access to microphone to record audio notes.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to photo library to select images for journal entries."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Journal Tracking to access your photos.",
+          "savePhotosPermission": "Allow Journal Tracking to save photos."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Journal Tracking to access your camera."
+        }
+      ]
+    ]
+  }
+}
