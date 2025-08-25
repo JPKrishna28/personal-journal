@@ -28,7 +28,8 @@
         "android.permission.RECORD_AUDIO",
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE"
-      ]
+      ],
+      "package": "com.jaswanthperla.journaltracking"
     },
     "web": {
       "bundler": "metro"
@@ -47,6 +48,11 @@
           "cameraPermission": "Allow Journal Tracking to access your camera."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d364692f-2725-4bbe-9cdd-d8cf7be2f5c4"
+      }
+    }
   }
 }
